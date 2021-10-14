@@ -5,5 +5,5 @@ Trabalho de Ciencia da Computação, matéria Programação Orientada a Objeto, 
 ## Integrantes:
 
 - `Pedro Bianchini de Quadros`
-- `Lukas Jacon Barbosa`
+- `Lukas Jacon Barboza`
 - `Thiago Krugel`
