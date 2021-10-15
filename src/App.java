@@ -33,7 +33,10 @@ public class App extends Application {
     public static void main(String[] args) throws Exception {
         launch(args);
     }
-
+    /**
+     * Função para trocar as Cenas/Telas.
+     * @param src Nesse parametro é colocado a tela onde o programa/logica deve ir.
+     */
     public static void ChangeScene(String src) {
         switch (src) {
             case "main":
