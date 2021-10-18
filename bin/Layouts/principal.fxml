@@ -91,13 +91,13 @@
                   <Font name="Impact" size="24.0" />
                </font>
             </Label>
-            <TextField layoutX="155.0" layoutY="100.0" prefHeight="25.0" prefWidth="216.0" />
+            <TextField fx:id="lblLogin" layoutX="155.0" layoutY="100.0" prefHeight="25.0" prefWidth="216.0" />
             <Label layoutX="150.0" layoutY="148.0" prefHeight="29.0" prefWidth="66.0" text="Senha" textAlignment="CENTER">
                <font>
                   <Font name="Impact" size="24.0" />
                </font>
             </Label>
-            <TextField layoutX="155.0" layoutY="188.0" />
+            <TextField fx:id="lblSenha" layoutX="155.0" layoutY="188.0" />
             <Label layoutX="26.0" layoutY="300.0" prefHeight="27.0" prefWidth="338.0" text="Para se registrar clique no botão cadastro">
                <font>
                   <Font size="18.0" />

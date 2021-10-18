@@ -101,9 +101,9 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="195.0" layoutY="140.0" />
-            <TextField layoutX="195.0" layoutY="175.0" />
-            <Button layoutX="232.0" layoutY="222.0" mnemonicParsing="false" text="Cadastrar" />
+            <TextField fx:id="lblEmail" layoutX="195.0" layoutY="140.0" />
+            <TextField fx:id="lblSenha" layoutX="195.0" layoutY="175.0" />
+            <Button layoutX="232.0" layoutY="222.0" mnemonicParsing="false" onAction="#Cadastrar" text="Cadastrar" />
             <Button layoutX="565.0" layoutY="328.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
       </children>
     </AnchorPane>

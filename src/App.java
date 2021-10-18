@@ -2,7 +2,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 
 public class App extends Application {
 
@@ -11,6 +13,7 @@ public class App extends Application {
     private static Scene detailsScene;
     private static Scene welcomeScene;
     private Parent root;
+    private static ArrayDeLista lista = new ArrayDeLista();
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -57,6 +60,13 @@ public class App extends Application {
         
             default:
                 break;
+        }
+    }
+    public static void ComparaLoginSenha(TextField login, TextField senha) {
+        for (int i = 0; i < lista.getAEmails().size() ; i++) {
+            if (lista.getAEmails().get(i).equals(login.getText())) {
+                ChangeScene("welcome");
+            }
         }
     }
 }
