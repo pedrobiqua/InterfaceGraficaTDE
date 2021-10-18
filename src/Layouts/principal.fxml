@@ -104,7 +104,7 @@
                </font>
             </Label>
             <Button layoutX="371.0" layoutY="301.0" mnemonicParsing="false" onAction="#Cadastrar" text="Cadastro" />
-            <Button layoutX="157.0" layoutY="230.0" mnemonicParsing="false" text="Entrar" />
+            <Button layoutX="157.0" layoutY="230.0" mnemonicParsing="false" onAction="#Entrar" text="Entrar" />
       </children>
     </AnchorPane>
   </children>

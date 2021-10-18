@@ -8,4 +8,9 @@ public class ControllerMenu {
         App.ChangeScene("registrar");
     }
 
+    @FXML
+    protected void Entrar(ActionEvent event){
+        App.ChangeScene("welcome");
+    }
+
 }

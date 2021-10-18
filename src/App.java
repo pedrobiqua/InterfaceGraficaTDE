@@ -9,6 +9,7 @@ public class App extends Application {
     private static Stage stage;
     private static Scene mainScene;
     private static Scene detailsScene;
+    private static Scene welcomeScene;
     private Parent root;
 
     @Override
@@ -24,6 +25,11 @@ public class App extends Application {
         FXMLLoader fxmlRegistrar = new FXMLLoader(getClass().getResource("Layouts/registrar.fxml"));
         root = fxmlRegistrar.load();
         detailsScene = new Scene(root);
+
+        FXMLLoader fxmlWelcome = new FXMLLoader(getClass().getResource("Layouts/welcomeSystem.fxml"));
+        root = fxmlWelcome.load();
+        welcomeScene = new Scene(root);
+
 
         primaryStage.setScene(mainScene);
 
@@ -44,6 +50,9 @@ public class App extends Application {
                 break;
             case "registrar":
                 stage.setScene(detailsScene);
+                break;
+            case "welcome":
+                stage.setScene(welcomeScene);
                 break;
         
             default:
