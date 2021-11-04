@@ -7,6 +7,7 @@ public class ControllerRegistrar {
 
     ArrayList<String> lista = new ArrayList<String>();
     private static ArrayList<String> listaCadastro = new ArrayList<String>();
+
     public static void setListaCadastro(ArrayList<String> listaCadastro) {
         ControllerRegistrar.listaCadastro = listaCadastro;
     }
