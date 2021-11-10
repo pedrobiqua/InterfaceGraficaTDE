@@ -13,7 +13,6 @@ public class App extends Application {
     private static Scene detailsScene;
     private static Scene welcomeScene;
     private Parent root;
-    private static ArrayDeLista lista = new ArrayDeLista();
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -37,6 +36,8 @@ public class App extends Application {
         primaryStage.setScene(mainScene);
 
         primaryStage.show();
+
+        System.out.println("Para entrar no sistema sem se cadastrar basta colocar login: adm, senha: adm");
     }
 
     public static void main(String[] args) throws Exception {
@@ -63,8 +64,8 @@ public class App extends Application {
         }
     }
     public static void ComparaLoginSenha(TextField login, TextField senha) {
-        for (int i = 0; i < lista.getAEmails().size() ; i++) {
-            if (lista.getAEmails().get(i).equals(login.getText())) {
+        for (int i = 0; i < ArrayDeLista.getAEmails().size(); i++) {
+            if (ArrayDeLista.getAEmails().get(i).equals(login.getText()) && ArrayDeLista.getASenhas().get(i).equals(senha.getText())) {
                 ChangeScene("welcome");
             }
         }
