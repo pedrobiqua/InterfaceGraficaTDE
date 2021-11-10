@@ -19,5 +19,5 @@ public class ArrayDeLista {
     public static void setASenhas(String aSenhas){
         ASenhas.add(aSenhas);
     }
-
+    //classe para adicionar as senhas e logins
 }

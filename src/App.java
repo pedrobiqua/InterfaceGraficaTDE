@@ -20,6 +20,7 @@ public class App extends Application {
 
         primaryStage.setTitle("Interface");
 
+        //Instanciando o carregamento das cenas.
         FXMLLoader fxmlMain = new FXMLLoader(getClass().getResource("Layouts/principal.fxml"));
         root = fxmlMain.load();
         mainScene = new Scene(root);
@@ -32,11 +33,12 @@ public class App extends Application {
         root = fxmlWelcome.load();
         welcomeScene = new Scene(root);
 
-
+        //Rodando a primeira cena.
         primaryStage.setScene(mainScene);
 
         primaryStage.show();
 
+        //Mensagem no console
         System.out.println("Para entrar no sistema sem se cadastrar basta colocar login: adm, senha: adm");
     }
 
@@ -63,6 +65,12 @@ public class App extends Application {
                 break;
         }
     }
+
+    /**
+     * Função para logar no sistema
+     * @param login Variável tipo textfield
+     * @param senha Variável tipo textfield
+     */
     public static void ComparaLoginSenha(TextField login, TextField senha) {
         for (int i = 0; i < ArrayDeLista.getAEmails().size(); i++) {
             if (ArrayDeLista.getAEmails().get(i).equals(login.getText()) && ArrayDeLista.getASenhas().get(i).equals(senha.getText())) {

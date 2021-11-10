@@ -9,12 +9,19 @@ public class ControllerMenu {
 
     @FXML
     private TextField lblSenha;
-    
+    /**
+     * Botão para trocar de cena
+     * @param event
+     */
     @FXML
     protected void Cadastrar(ActionEvent event) {
         App.ChangeScene("registrar");
     }
 
+    /**
+     * Botão para entrar no sistema
+     * @param event
+     */
     @FXML
     protected void Entrar(ActionEvent event){
         if (lblLogin.getText().equals("adm") && lblSenha.getText().equals("adm")) {
@@ -23,7 +30,7 @@ public class ControllerMenu {
             App.ChangeScene("welcome");
             
         }
-        App.ComparaLoginSenha(lblLogin, lblSenha);
+        App.ComparaLoginSenha(lblLogin, lblSenha); //Usando função escrita no main.
         
     }
 

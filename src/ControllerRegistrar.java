@@ -23,12 +23,16 @@ public class ControllerRegistrar {
     @FXML
     private TextField lblSenha;
 
-    
+    /**
+     * Botão voltar
+     */
     @FXML
     protected void Voltar(ActionEvent event) {
         App.ChangeScene("main");
     }
-
+    /**
+     * Cadastrar novo usuário
+     */
     @FXML
     protected void Cadastrar(ActionEvent event){
         String email = lblEmail.getText(); 
