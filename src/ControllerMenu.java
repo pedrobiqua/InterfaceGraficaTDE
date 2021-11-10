@@ -18,9 +18,10 @@ public class ControllerMenu {
     @FXML
     protected void Entrar(ActionEvent event){
         if (lblLogin.getText().equals("adm") && lblSenha.getText().equals("adm")) {
-            App.ChangeScene("welcome");
             lblLogin.setText("");
             lblSenha.setText("");
+            App.ChangeScene("welcome");
+            
         }
         App.ComparaLoginSenha(lblLogin, lblSenha);
         

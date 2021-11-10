@@ -30,7 +30,7 @@ public class ControllerRegistrar {
 
     @FXML
     protected void Cadastrar(ActionEvent event){
-        String email = lblEmail.getText();
+        String email = lblEmail.getText(); 
         String senha = lblSenha.getText();
 
         lista.add(email);
