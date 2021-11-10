@@ -66,6 +66,8 @@ public class App extends Application {
     public static void ComparaLoginSenha(TextField login, TextField senha) {
         for (int i = 0; i < ArrayDeLista.getAEmails().size(); i++) {
             if (ArrayDeLista.getAEmails().get(i).equals(login.getText()) && ArrayDeLista.getASenhas().get(i).equals(senha.getText())) {
+                login.setText("");
+                senha.setText("");
                 ChangeScene("welcome");
             }
         }

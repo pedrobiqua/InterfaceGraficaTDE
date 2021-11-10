@@ -37,7 +37,7 @@ public class ControllerRegistrar {
         ArrayDeLista.setAEmails(email);
         ArrayDeLista.setASenhas(senha);
 
-        lblEmail.setText(" ");
+        lblEmail.setText("");
         lblSenha.setText("Registrado");
 
     }
