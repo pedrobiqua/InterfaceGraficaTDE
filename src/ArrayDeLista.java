@@ -1,14 +1,23 @@
 import java.util.ArrayList;
 
 public class ArrayDeLista {
-    private ArrayList<String> AEmails = new ArrayList<String>();
-    private ArrayList<String> ASenhas = new ArrayList<String>();
+    private static ArrayList<String> AEmails = new ArrayList<String>();
+    private static ArrayList<String> ASenhas = new ArrayList<String>();
 
-    public ArrayList<String> getAEmails() {
+    public static ArrayList<String> getAEmails() {
         return AEmails;
     }
 
-    public ArrayList<String> getASenhas() {
+    public static ArrayList<String> getASenhas() {
         return ASenhas;
     }
+
+    public static void setAEmails(String aEmails) {
+        AEmails.add(aEmails);
+    }
+
+    public static void setASenhas(String aSenhas){
+        ASenhas.add(aSenhas);
+    }
+
 }

@@ -1,6 +1,7 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+
 import java.util.ArrayList;
 
 public class ControllerRegistrar {
@@ -33,9 +34,11 @@ public class ControllerRegistrar {
         String email = lblEmail.getText(); 
         String senha = lblSenha.getText();
 
-        lista.add(email);
-        lista.add(senha);
+        ArrayDeLista.setAEmails(email);
+        ArrayDeLista.setASenhas(senha);
 
-        ControllerRegistrar.setListaCadastro(lista);
+        lblEmail.setText(" ");
+        lblSenha.setText("Registrado");
+
     }
 }
